@@ -270,7 +270,7 @@ func reducedDuplexRow1(state []uint64, rowIn []uint64, rowOut []uint64, nCols in
 		ptrWordOut[11] = ptrWordIn[11] ^ state[11]
 
 		//Input: next column (i.e., next block in sequence)
-		ptrIn += blockLenBlake2SafeBytes
+		ptrIn += blockLenInt64
 		//Output: goes to previous column
 		ptrOut -= blockLenInt64
 	}
